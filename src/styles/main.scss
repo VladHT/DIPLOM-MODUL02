@@ -6,7 +6,6 @@ html{
     font-family: 'Inter', sans-serif;
     background: #F3F2F0;
 }
-
 .container{
     max-width: 1140px;
     margin: 0 auto;
@@ -151,17 +150,27 @@ html{
     }
     &__Polygon{
         position: absolute;
-        left: -150px;
+        width: 72px;
+        height: 71px;      
+        background-image: url(../images/Polygon.svg);
+        background-size: cover;
+        left: -153px;
         top: -18px;
     }
     &__Ellipse{
         position: absolute;
+        width: 253px;
+        height: 253px;
         left: -127px;
+        background-image: url(../images/Ellipse.svg);
+        background-size: cover;
         top: -56px;
         z-index: -1;
         &_mini{
             width: 106px;
             height: 106px;
+            background-image: url(../images/Ellipse.svg);
+            background-size: cover;
             position: absolute;
             right: 38px;
             top: 221px;
@@ -669,5 +678,117 @@ html{
                 z-index: -1;
             }
         }
+    }
+}
+
+
+
+// DARK-THEME
+.dark{
+    color: white;
+    background: #232326;
+    .header__item a{
+        color: white;
+    }
+    .header__contact::after{
+        border-color: white;
+    }
+    .rate__title{
+        position: relative;
+        z-index: 1;
+        &::after{
+            background-image: url(../images/Ellipse-dark.svg);
+            z-index: -1;
+        }
+    }
+    .rate__right__price{
+        position: relative;
+        z-index: 1;
+        &::after{
+            background-image: url(../images/Ellipse-dark.svg);
+            z-index: -1;
+        }
+    }
+    .portfolio{
+        &__skills{
+        background: linear-gradient(180deg, #141416 0%, rgba(20, 20, 22, 0) 100%);
+        }
+        &__title::after{
+            background-image: url(../images/Ellipseportfolio-dark.svg);
+        }
+        &__info{
+            &__item{
+                &:first-child{
+                    &::after{
+                        background-image: url(../images/cil_money\ DARK.svg);
+                    }
+                }
+                &:nth-child(2){
+                    &::after{
+                        background-image: url(../images/cil_image-plus\ DARK.svg);
+                    }
+                }
+                &:nth-child(3){
+                    &::after{
+                        background-image: url(../images/cil_image-plus\ DARK.svg);
+                    }
+                }
+                &:nth-child(4){
+                    &::after{
+                        background-image: url(../images/telephone-DARK.svg);
+                    }
+                }
+                &:nth-child(5){
+                    &::after{
+                        background-image: url(../images/mdi_code-json-DARK.svg);
+                    }
+                }
+                &:nth-child(6){
+                    &::after{
+                        background-image: url(../images/file-DARK.svg);
+                    }
+                }
+            }
+        }
+    }
+    .about{
+        &__title{
+            position: relative;
+            z-index: 1;
+        }
+        &__name{
+            position: relative;
+            z-index: 1;
+        }
+        &__flex{
+            position: relative;
+            z-index: 1;
+        }
+        &__links a{
+            color: white;
+        }
+        &__discuss{
+        color: white;
+            &::after{
+                background-image: url(../images/Arrow\ white.svg);
+            }
+        }
+        &__Ellipse{
+            background-image: url(../images/Ellipse-dark.svg);
+            z-index: 0;
+            &_mini{
+                background-image: url(../images/Ellipse-dark.svg);
+                z-index: 0;
+            }
+        }
+        &__Polygon{
+            background-image: url(../images/Polygon-dark.svg);
+        }
+    }
+    a{
+        color: white;
+    }
+    li{
+        color: white;
     }
 }
