@@ -6,6 +6,9 @@ html{
     font-family: 'Inter', sans-serif;
     background: #F3F2F0;
 }
+body{
+    margin: 0;
+}
 .container{
     max-width: 1140px;
     margin: 0 auto;
@@ -680,6 +683,18 @@ html{
         }
     }
 }
+.btn-toggle{
+        position: fixed;
+        right: 15px;
+        top: 10px;
+        width: 34px;
+        height: 34px;
+        background-image: url(../images/sun.png);
+        background-size: cover;
+        border: none;
+        border-radius: 100%;
+        cursor: pointer;
+}
 
 
 
@@ -689,6 +704,11 @@ html{
     background: #232326;
     .header__item a{
         color: white;
+    }
+    .btn-toggle{
+        background-image: url(../images/moon.png);
+        background-color: transparent;
+        background-color: white;
     }
     .header__contact::after{
         border-color: white;
