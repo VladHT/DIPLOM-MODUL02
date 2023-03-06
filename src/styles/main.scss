@@ -464,9 +464,9 @@ body{
             height: 146px;
             position: relative;
             filter: grayscale(1);
-            opacity: 0.3;
             transition: 0.3s;
             border: 1px solid $black;
+            opacity: 0.3;
             &:hover{
                 filter: grayscale(0);
                 opacity: 1;
@@ -695,6 +695,32 @@ body{
         border-radius: 100%;
         cursor: pointer;
 }
+.conect{
+    .rate__block{
+        padding-top: 96px;
+        border-bottom: 1px solid $black;
+        padding-bottom: 31px;
+    }
+    .rate__title{
+        max-width: 300px;
+        &::after{
+            width: 300px;
+            height: 300px;
+            top: -29px;
+            left: -152px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            background-image: url(../images/Polygon.svg);
+            background-repeat: no-repeat;
+            width: 73.34px;
+            height: 91.67px;
+            top: 24px;
+            left: -176px;
+        }
+    }
+}
 
 
 
@@ -702,16 +728,13 @@ body{
 .dark{
     color: white;
     background: #232326;
-    .header__item a{
-        color: white;
-    }
     .btn-toggle{
         background-image: url(../images/moon.png);
         background-size: 50px;
         background-position: center;
         background-repeat: no-repeat;
     }
-    .header__contact::after{
+    .header__contact::after , .about__flex_wrap, .stage, .portfolio__item, .aside, .portfolio__grid__item, .rate__right, .rate__left, .portfolio__grid{
         border-color: white;
     }
     .rate__title{
