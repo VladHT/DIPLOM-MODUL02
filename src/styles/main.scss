@@ -707,8 +707,9 @@ body{
     }
     .btn-toggle{
         background-image: url(../images/moon.png);
-        background-color: transparent;
-        background-color: white;
+        background-size: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .header__contact::after{
         border-color: white;
