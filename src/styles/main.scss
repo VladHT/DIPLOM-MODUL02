@@ -38,6 +38,10 @@ body{
         font-weight: 400;
         font-size: 14px;
         line-height: 150%;
+        transition: 0.3s;
+        &:hover{
+            color: #D40000;
+        }
     }
     &__tel{
         margin-right: 21px;
@@ -49,6 +53,10 @@ body{
         a{
             text-decoration: none;
             color: $black;
+            transition: 0.3s;
+            &:hover{
+                color: #D40000;
+            }
         }
     }
     &__baner{
@@ -118,6 +126,9 @@ body{
         a{
             text-decoration: none;
             color: $black;
+            &:hover{
+                color: #D40000;
+            }
         }
     }
     &__link{
@@ -142,6 +153,23 @@ body{
         line-height: 150%;
         cursor: pointer;
         position: relative;
+        &::before{
+            content: "";
+            width: 170px;
+            height: 2px;
+            position: absolute;
+            bottom: -4px;
+            left: 5px;
+            opacity: 0;
+            transition: 0.3s;
+            border-radius: 4rem;
+            background-color: $black;
+        }
+        &:hover{
+            &::before{
+                opacity: 1;
+            }
+        }
         &::after{
             content: "";
             width: 15px;
@@ -463,6 +491,140 @@ body{
         grid-template-areas:        "a b c d"
                                     "e f g h";
         margin-top: 67px;
+        position: relative;
+        &__title{
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 150%;
+            color: white;
+        }
+        &__description{
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 150%;
+            color: white;
+        }
+        &__html, &__css, &__js, &__jquery, &__bootstrap, &__php, &__vue, &__wordpress{
+            position: absolute;
+            opacity: 0;
+            width: 232px;
+            text-align: center;
+            transition: 0.5s;
+            background-color: #EA0E00;
+            z-index: -1;
+        }
+        &__html{
+            bottom: 60px;
+            left: 30px;
+            &::after{
+                content: "";
+                position: absolute;
+                background-image: url(../images/Polygon.svg);
+                background-size: cover;
+                width: 14px;
+                height: 14px;
+                top: -7px;
+                left: 103px;
+            }
+        }
+        &__css{
+            bottom: 50px;
+            left: 316px;
+            &::after{
+                content: "";
+                position: absolute;
+                background-image: url(../images/Polygon.svg);
+                background-size: cover;
+                width: 14px;
+                height: 14px;
+                top: -7px;
+                left: 103px;
+            }
+        }
+        &__js{
+            bottom: 60px;
+            left: 602px;
+            &::after{
+                content: "";
+                position: absolute;
+                background-image: url(../images/Polygon.svg);
+                background-size: cover;
+                width: 14px;
+                height: 14px;
+                top: -7px;
+                left: 103px;
+            }
+        }
+        &__jquery{
+            bottom: 70px;
+            left: 888px;
+            &::after{
+                content: "";
+                position: absolute;
+                background-image: url(../images/Polygon.svg);
+                background-size: cover;
+                width: 14px;
+                height: 14px;
+                top: -7px;
+                left: 103px;
+            }
+        }
+        &__bootstrap{
+            bottom: -120px;
+            left: 30px;
+            &::after{
+                content: "";
+                position: absolute;
+                background-image: url(../images/Polygon.svg);
+                background-size: cover;
+                width: 14px;
+                height: 14px;
+                top: -7px;
+                left: 103px;
+            }
+        }
+        &__php{
+            bottom: -90px;
+            left: 316px;
+            &::after{
+                content: "";
+                position: absolute;
+                background-image: url(../images/Polygon.svg);
+                background-size: cover;
+                width: 14px;
+                height: 14px;
+                top: -7px;
+                left: 103px;
+            }
+        }
+        &__vue{
+            bottom: -90px;
+            left: 602px;
+            &::after{
+                content: "";
+                position: absolute;
+                background-image: url(../images/Polygon.svg);
+                background-size: cover;
+                width: 14px;
+                height: 14px;
+                top: -7px;
+                left: 103px;
+            }
+        }
+        &__wordpress{
+            bottom: -90px;
+            left: 888px;
+            &::after{
+                content: "";
+                position: absolute;
+                background-image: url(../images/Polygon.svg);
+                background-size: cover;
+                width: 14px;
+                height: 14px;
+                top: -7px;
+                left: 103px;
+            }
+        }
         &__item{
             max-width: 286px;
             height: 146px;
@@ -476,6 +638,15 @@ body{
                 opacity: 1;
             }
             &:first-child{
+                transition: 2s;
+                &:hover{
+                    ~.portfolio__grid__html{
+                        opacity: 1;
+                        bottom: 70px;
+                        left: 30px;
+                        z-index: 2;
+                    }
+                }
                 &::after{
                     content: "";
                     position: absolute;
@@ -489,6 +660,15 @@ body{
                 } 
             }
             &:nth-child(2){
+                transition: 2s;
+                &:hover{
+                    ~.portfolio__grid__css{
+                        opacity: 1;
+                        bottom: 60px;
+                        left: 316px;
+                        z-index: 2;
+                    }
+                }
                 &::after{
                     content: "";
                     position: absolute;
@@ -501,6 +681,15 @@ body{
                 } 
             }
             &:nth-child(3){
+                transition: 2s;
+                &:hover{
+                    ~.portfolio__grid__js{
+                        opacity: 1;
+                        bottom: 70px;
+                        left: 602px;
+                        z-index: 2;
+                    }
+                }
                 &::after{
                     content: "";
                     position: absolute;
@@ -513,6 +702,15 @@ body{
                 } 
             }
             &:nth-child(4){
+                transition: 2s;
+                &:hover{
+                    ~.portfolio__grid__jquery{
+                        opacity: 1;
+                        bottom: 85px;
+                        left: 888px;
+                        z-index: 2;
+                    }
+                }
                 &::after{
                     content: "";
                     position: absolute;
@@ -525,6 +723,15 @@ body{
                 } 
             }
             &:nth-child(5){
+                transition: 2s;
+                &:hover{
+                    ~.portfolio__grid__bootstrap{
+                        opacity: 1;
+                        bottom: -115px;
+                        left: 30px;
+                        z-index: 2;
+                    }
+                }
                 &::after{
                     content: "";
                     position: absolute;
@@ -537,6 +744,15 @@ body{
                 } 
             }
             &:nth-child(6){
+                transition: 2s;
+                &:hover{
+                    ~.portfolio__grid__php{
+                        opacity: 1;
+                        bottom: -78px;
+                        left: 316px;
+                        z-index: 2;
+                    }
+                }
                 &::after{
                     content: "";
                     position: absolute;
@@ -549,6 +765,15 @@ body{
                 } 
             }
             &:nth-child(7){
+                transition: 2s;
+                &:hover{
+                    ~.portfolio__grid__vue{
+                        opacity: 1;
+                        bottom: -78px;
+                        left: 602px;
+                        z-index: 2;
+                    }
+                }
                 &::after{
                     content: "";
                     position: absolute;
@@ -561,6 +786,15 @@ body{
                 } 
             }
             &:nth-child(8){
+                transition: 2s;
+                &:hover{
+                    ~.portfolio__grid__wordpress{
+                        opacity: 1;
+                        bottom: -78px;
+                        left: 888px;
+                        z-index: 2;
+                    }
+                }
                 &::after{
                     content: "";
                     position: absolute;
@@ -720,7 +954,11 @@ body{
         line-height: 150%;
         color: white;
         background-color: #D40000;
+        transition: 1s;
         border: none;
+        &:hover{
+            background-color: #EA0E00;
+        }
     }
     &__input{
         margin-top: -2px;
@@ -728,7 +966,11 @@ body{
         font-weight: 400;
         font-size: 12px;
         line-height: 150%;
-        opacity: 0.2;
+        border: none;
+        background-color: rgba($black, 0.05);
+        &:focus{
+            outline: none;
+        }
     }
     &__date{
         display: flex;
