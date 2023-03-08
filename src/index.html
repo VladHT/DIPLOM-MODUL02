@@ -255,18 +255,62 @@
                         <li class="about__link"><a href="#">Linkedin</a></li>
                     </ul>
                     <div class="conect__date">
-                        <p></p>
-                        <input type="text">
-                        <p></p>
-                        <select name="" id="">
-                            
+                        <p>Телефон или почта</p>
+                        <input type="text" placeholder="Введите телефон" class="conect__input">
+                        <p>Выберите удобный способ связи</p>
+                        <label class="drop">
+                            <input type="checkbox" id="target-drop-example">
+                            <span class="control">Telegram</span>
+                            <ul class="drop-items">
+                              <li class="item-drop">
+                                <a target="_blank"
+                                   href="#">WhatsApp</a></li>
+                              <li class="item-drop">
+                                <a target="_blank"
+                                   href="#">Viber</a></li>
+                              <li class="item-drop">
+                                <a target="_blank"
+                                   href="#">Звонок на телефон</a></li>
+                              <li class="item-drop">
+                                <a target="_blank"
+                                   href="#">SMS сообщение</a></li>
+                            </ul>
+                            <label for="target-drop-example" class="overlay-close"></label>
+                          </label>  
+                          <button class="conect__btn">Отправить</button> 
                         </select>
-                        <button></button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="header">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="#">Обо мне</a></li>
+                        <li class="header__item"><a href="#">Портфолио</a></li>
+                        <li class="header__item"><a href="#">Этапы работ</a></li>
+                        <li class="header__item"><a href="#">Цены</a></li>
+                        <li class="header__item"><a href="#">Обратная связь</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contact">
+                    <a href="tel:89220030713" class="header__tel">+7 922 003-07-13</a>
+                    <a href="email:alexdev@gmail.com" class="header__mail">alexdev@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="my-work">
+            <div class="container">
+                <div class="my-work__flex">
+                    <p class="my-work__text my-work__text-opacity">© 2020, Все права защищены</p>
+                    <p class="my-work__text"><span class="my-work__text-opacity">Сделано в рамках курса учебной платформы </span><a href="" class="my-work__link">AnnBlok</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <button class="btn-toggle" id="btn-toggle"></button>
 </body>
 </html>
