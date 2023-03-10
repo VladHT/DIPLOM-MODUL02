@@ -2,16 +2,20 @@
 
 $black:#010101;
 
+$r_tap_1280:1280px;
+$r_tab_1160:1160px;
+
 html{
     font-family: 'Inter', sans-serif;
     background: #F3F2F0;
 }
 body{
-    margin: 0;
+    margin: 0 auto;
 }
 .container{
     max-width: 1140px;
     margin: 0 auto;
+    padding: 0 15px;
     position: relative;
 }
 
@@ -25,6 +29,14 @@ body{
     background-color: #F3F2F0;
     width: 1140px;
     top: 0;
+    @media (max-width:$r_tap_1280) {
+        justify-content: space-evenly;
+    }
+    @media (max-width:$r_tab_1160) {
+        position: inherit;
+        width: 100%;
+        max-width: 1140px;
+    }
     &__list{
         display: flex;
         list-style: none;
@@ -63,7 +75,7 @@ body{
         background-image: url(../images/head-buner.png);
         background-size: cover;
         background-repeat: no-repeat;
-        width: 1140px;
+        max-width: 1140px;
         height: 310px;
         margin-top: 96px;
     }
@@ -515,7 +527,7 @@ body{
         }
         &__html{
             bottom: 60px;
-            left: 30px;
+            right: 880px;
             &::after{
                 content: "";
                 position: absolute;
@@ -529,7 +541,7 @@ body{
         }
         &__css{
             bottom: 50px;
-            left: 316px;
+            right: 590px;
             &::after{
                 content: "";
                 position: absolute;
@@ -543,7 +555,7 @@ body{
         }
         &__js{
             bottom: 60px;
-            left: 602px;
+            right: 300px;
             &::after{
                 content: "";
                 position: absolute;
@@ -557,7 +569,7 @@ body{
         }
         &__jquery{
             bottom: 70px;
-            left: 888px;
+            right: 22px;
             &::after{
                 content: "";
                 position: absolute;
@@ -571,7 +583,7 @@ body{
         }
         &__bootstrap{
             bottom: -120px;
-            left: 30px;
+            right: 880px;
             &::after{
                 content: "";
                 position: absolute;
@@ -585,7 +597,7 @@ body{
         }
         &__php{
             bottom: -90px;
-            left: 316px;
+            right: 590px;
             &::after{
                 content: "";
                 position: absolute;
@@ -599,7 +611,7 @@ body{
         }
         &__vue{
             bottom: -90px;
-            left: 602px;
+            right: 300px;
             &::after{
                 content: "";
                 position: absolute;
@@ -613,7 +625,7 @@ body{
         }
         &__wordpress{
             bottom: -90px;
-            left: 888px;
+            right: 22px;
             &::after{
                 content: "";
                 position: absolute;
@@ -643,7 +655,7 @@ body{
                     ~.portfolio__grid__html{
                         opacity: 1;
                         bottom: 70px;
-                        left: 30px;
+                        right: 880px;
                         z-index: 2;
                     }
                 }
@@ -665,7 +677,7 @@ body{
                     ~.portfolio__grid__css{
                         opacity: 1;
                         bottom: 60px;
-                        left: 316px;
+                        right: 590px;
                         z-index: 2;
                     }
                 }
@@ -686,7 +698,7 @@ body{
                     ~.portfolio__grid__js{
                         opacity: 1;
                         bottom: 70px;
-                        left: 602px;
+                        right: 300px;
                         z-index: 2;
                     }
                 }
@@ -707,7 +719,7 @@ body{
                     ~.portfolio__grid__jquery{
                         opacity: 1;
                         bottom: 85px;
-                        left: 888px;
+                        right: 22px;
                         z-index: 2;
                     }
                 }
@@ -728,7 +740,7 @@ body{
                     ~.portfolio__grid__bootstrap{
                         opacity: 1;
                         bottom: -115px;
-                        left: 30px;
+                        right: 880px;
                         z-index: 2;
                     }
                 }
@@ -749,7 +761,7 @@ body{
                     ~.portfolio__grid__php{
                         opacity: 1;
                         bottom: -78px;
-                        left: 316px;
+                        right: 590px;
                         z-index: 2;
                     }
                 }
@@ -770,7 +782,7 @@ body{
                     ~.portfolio__grid__vue{
                         opacity: 1;
                         bottom: -78px;
-                        left: 602px;
+                        right: 300px;
                         z-index: 2;
                     }
                 }
@@ -932,6 +944,12 @@ body{
         border: none;
         border-radius: 100%;
         cursor: pointer;
+        @media (max-width:$r_tap_1280) {
+            z-index: 3;
+            bottom: 10px;
+            right: 15px;
+            top: inherit;
+        }
 }
 .conect{
     .rate__block{
@@ -1098,9 +1116,12 @@ body{
           display:block;
           color: $black;
           text-decoration: none;
-          padding: .6rem;
+          padding: 1rem;
           transition: all .3s ease;
           opacity: 0.4;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 150%;
           @media (hover: hover) {
             &:hover{
               color: $black;
@@ -1128,6 +1149,7 @@ body{
         position: inherit;
         padding-top: 48px;
         border-top: 1px solid black;
+        max-width: 1140px;
     }
 }
 
@@ -1183,7 +1205,7 @@ body{
                 }
                 &:nth-child(3){
                     &::after{
-                        background-image: url(../images/cil_image-plus\ DARK.svg);
+                        background-image: url(../images/bi_clock-historyDARK.svg);
                     }
                 }
                 &:nth-child(4){
@@ -1227,6 +1249,9 @@ body{
         }
         &__links a{
             color: white;
+            &:hover{
+                color: #EA0E00;
+            }
         }
         &__discuss{
         color: white;
@@ -1248,6 +1273,11 @@ body{
     }
     a, .control , .drop .drop-items .item-drop a {
         color: white;
+    }
+    .control{
+        &::after{
+            background-image: url(../images/row-control.svg);
+        }
     }
     li{
         color: white;
