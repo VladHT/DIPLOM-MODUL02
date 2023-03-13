@@ -7,6 +7,8 @@ $r_tab_1186:1186px;
 $r_tab_1000:1000px;
 $r_tab_900:900px;
 $r_tab_846:846px;
+$r_mob_600:600px;
+$r_mob_540:540px;
 
 html{
     font-family: 'Inter', sans-serif;
@@ -427,6 +429,7 @@ body{
         font-weight: 400;
         font-size: 28px;
         line-height: 150%;
+        margin-right: 40px;
         @media (max-width:$r_tab_846) {
             font-size: 16px;
         }
@@ -435,8 +438,7 @@ body{
         font-weight: 400;
         font-size: 28px;
         line-height: 150%;
-        margin-left: 40px;
-        width: 342px;
+        width: 417px;
         @media (max-width:$r_tab_846) {
             font-size: 16px;
         }
@@ -533,6 +535,10 @@ body{
             font-weight: 900;
             font-size: 33px;
             position: relative;
+            @media (max-width:$r_mob_600) {
+                width: 340px;
+                height: 190px;
+            }
             &:hover{
                 opacity: 0.6;
                 &::after{
@@ -1251,6 +1257,9 @@ body{
         @media (max-width:$r_tab_846) {
             font-size: 12px;
         }
+        @media (max-width:$r_mob_600) {
+            width: 328px;
+        }
         &:hover{
             background-color: #EA0E00;
         }
@@ -1266,6 +1275,9 @@ body{
         @media (max-width:$r_tab_846) {
             font-size: 10px;
         }
+        @media (max-width:$r_mob_600) {
+            padding: 22px 187px 22px 22px;
+        }
         &:focus{
             outline: none;
         }
@@ -1277,6 +1289,9 @@ body{
         margin-top: 43px;
         @media (max-width:$r_tab_900) {
             margin-bottom: 60px;
+        }
+        @media (max-width:$r_mob_600) {
+            align-items: center;
         }
         p{
             font-weight: 400;
@@ -1397,6 +1412,9 @@ body{
         background-position: 0 7px;
         background-size: contain;      
         transition: transform .3s ease;
+        @media (max-width:$r_mob_600) {
+            margin-left: 18.723em;
+        }
       }
     }
     
@@ -1459,6 +1477,11 @@ body{
         @media (max-width:$r_tab_846) {
             flex-direction: column-reverse;
             align-items: center;
+        }
+        &__list{
+            @media (max-width:$r_mob_540) {
+                flex-direction: column;
+            }
         }
         &__nav{
             @media (max-width:$r_tab_846) {
