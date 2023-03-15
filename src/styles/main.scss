@@ -9,6 +9,7 @@ $r_tab_900:900px;
 $r_tab_846:846px;
 $r_mob_600:600px;
 $r_mob_540:540px;
+$r_mob_400:400px;
 
 html{
     font-family: 'Inter', sans-serif;
@@ -595,6 +596,7 @@ body{
         padding-bottom: 100px;
         @media (max-width:$r_tab_846) {
             padding-bottom: 0;
+            justify-content: center;
         }
         &__item{
             max-width: 238px;
@@ -868,6 +870,9 @@ body{
             opacity: 0.3;
             @media (max-width:$r_tab_846) {
                 height: 111px;
+            }
+            @media (max-width:$r_mob_540) {
+                height: 44px;
             }
             &:hover{
                 filter: grayscale(0);
@@ -1152,6 +1157,9 @@ body{
             @media (max-width:$r_tab_846) {
                 font-size: 16px;
             }
+            @media (max-width:$r_mob_400) {
+                max-width: 145px;
+            }
         }
         &__description{
             font-weight: 500;
@@ -1162,9 +1170,21 @@ body{
             @media (max-width:$r_tab_846) {
                 font-size: 10px;
             }
+            @media (max-width:$r_mob_400) {
+                max-width: 100px;
+                margin-bottom: 20px;
+            }
         }
         .about__discuss{
             margin-left: -4px;
+            &::after{
+                width: 10px;
+                height: 5px;
+                right: -15px;
+            }
+            &::before{
+                width: 100px;
+            }
         }
     }
     &__right{
@@ -1201,9 +1221,6 @@ body{
             @media (max-width:$r_tab_846) {
                 font-size: 22px;
             }
-            @media (max-width:$r_mob_540) {
-                font-size: 16px;
-            }
             &::after{
                 content: "";
                 position: absolute;
@@ -1216,6 +1233,12 @@ body{
                 z-index: -1;
                 @media (max-width:$r_tab_846) {
                     top: -29px;
+                }
+                @media (max-width:$r_mob_540) {
+                    width: 40px;
+                    height: 40px;
+                    top: -7px;
+                    left: -16px;
                 }
             }
         }
@@ -1433,6 +1456,9 @@ body{
         @media (max-width:$r_mob_600) {
             margin-left: 18.723em;
         }
+        @media (max-width:$r_mob_400) {
+            margin-left: 18.5em;
+        }
       }
     }
     
@@ -1482,6 +1508,11 @@ body{
       pointer-events:none;
     }
   }
+.adapt{
+    @media (max-width:$r_mob_400) {
+        margin-bottom: 40px;
+    }
+}
 .footer{
     margin-top: 129px;
     @media (max-width:$r_tab_846) {
