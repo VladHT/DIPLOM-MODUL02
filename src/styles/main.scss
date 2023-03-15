@@ -1250,7 +1250,7 @@ body{
         top: 10px;
         width: 34px;
         height: 34px;
-        background-image: url(../images/Moonandstar.svg);
+        background-image: url(../images/moon-sun-svgrepo-com.svg);
         background-size: cover;
         background-position: center;
         background-color: transparent;
@@ -1258,6 +1258,9 @@ body{
         border: none;
         border-radius: 100%;
         cursor: pointer;
+        &:hover{
+            background-image: url(../images/moon-red.svg);
+        }
         @media (max-width:$r_tap_1280) {
             z-index: 3;
             bottom: 10px;
@@ -1568,6 +1571,10 @@ body{
         background-color: transparent;
         background-position: center;
         background-repeat: no-repeat;
+        transition: 0.3s;
+        &:hover{
+            background-image: url(../images/sun-red.svg);
+        }
     }
     .header__contact::after , .about__flex_wrap, .stage, .portfolio__item, .aside, .portfolio__grid__item, .rate__right, .rate__left, .portfolio__grid{
         border-color: white;
