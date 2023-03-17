@@ -12,11 +12,11 @@
             <div class="header">
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li class="header__item"><a href="#">Обо мне</a></li>
-                        <li class="header__item"><a href="#">Портфолио</a></li>
-                        <li class="header__item"><a href="#">Этапы работ</a></li>
-                        <li class="header__item"><a href="#">Цены</a></li>
-                        <li class="header__item"><a href="#">Обратная связь</a></li>
+                        <li class="header__item"><a href="#aboutme" class="smooz">Обо мне</a></li>
+                        <li class="header__item"><a href="#portfolio" class="smooz">Портфолио</a></a></li>
+                        <li class="header__item"><a href="#stage" class="smooz">Этапы работ</a></li>
+                        <li class="header__item"><a href="#cost" class="smooz">Цены</a></li>
+                        <li class="header__item"><a href="#conect" class="smooz">Обратная связь</a></li>
                     </ul>
                 </nav>
                 <div class="header__contact">
@@ -25,7 +25,29 @@
                 </div>
             </div>
             <div class="header__baner"></div>
-            <button class="header__menu"></button>
+            <button class="header__menu" id="menu_show">
+                <div class="menu" id="menu">
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item"><a href="#aboutme" class="smooz">Обо мне</a></li>
+                            <li class="header__item"><a href="#portfolio" class="smooz">Портфолио</a></a></li>
+                            <li class="header__item"><a href="#stage" class="smooz">Этапы работ</a></li>
+                            <li class="header__item"><a href="#cost" class="smooz">Цены</a></li>
+                            <li class="header__item"><a href="#conect" class="smooz">Обратная связь</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__contact">
+                        <a href="tel:89220030713" class="header__tel">+7 922 003-07-13</a>
+                        <a href="email:alexdev@gmail.com" class="header__mail">alexdev@gmail.com</a>
+                    </div>
+                    <ul class="about__links">
+                        <li class="about__link"><a href="#">Vk</a></li>
+                        <li class="about__link"><a href="#">Instagram</a></li>
+                        <li class="about__link"><a href="#">Linkedin</a></li>
+                    </ul>
+                    <div class="close__btn"></div>
+                </div>
+            </button>
         </div>
     </header>
     <main>
@@ -44,7 +66,7 @@
                 <div class="about__Ellipse"></div>
                 <div class="about__Ellipse_mini"></div>
                 <div class="about__Polygon"></div>
-                <div class="about__flex_wrap">
+                <div class="about__flex_wrap" id="aboutme">
                     <div class="about__item">
                         <h3 class="about__item__title">FRONT-END</h3>
                         <p class="about__item__text">HTML+CSS+JS кодирование дизайнов любой сложности</p>
@@ -88,7 +110,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="stage__padding" id="stage">
             <div class="container">
                 <ul class="stages">
                     <li class="stage">
@@ -108,7 +130,7 @@
         </section>
         <section class="portfolio">
             <div class="container">
-                <h2 class="portfolio__title">Портфолио</h2>
+                <h2 class="portfolio__title" id="portfolio">Портфолио</h2>
             </div>
             <div class="portfolio__skills">
                 <div class="container">
@@ -226,7 +248,7 @@
                     <h2 class="rate__title">Тарифы</h2>
                     <p class="rate__text">Представленные ниже цены зависят не&nbsp;только от того какой сайт вы хотите. Конечная цена будет озвучена после прочтения Вашего ТЗ</p>
                 </div>
-                <div class="rate__cost">
+                <div class="rate__cost" id="cost">
                     <div class="rate__left">
                         <h3 class="rate__left__title">Разработка<br>лэндинга&nbsp;или сайт&nbsp;визитки</h3>
                         <p class="rate__left__description">Небольшой сайт состоящий из одной страницы</p>
@@ -272,7 +294,7 @@
                 </div>
             </div>
         </section>
-        <section class="conect">
+        <section class="conect" id="conect">
             <div class="container">
                 <div class="rate__block">
                     <h2 class="rate__title">Расскажите о&nbsp;своем&nbsp;проекте</h2>
@@ -319,11 +341,11 @@
             <div class="header">
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li class="header__item"><a href="#">Обо мне</a></li>
-                        <li class="header__item"><a href="#">Портфолио</a></li>
-                        <li class="header__item"><a href="#">Этапы работ</a></li>
-                        <li class="header__item"><a href="#">Цены</a></li>
-                        <li class="header__item"><a href="#">Обратная связь</a></li>
+                        <li class="header__item"><a href="#aboutme" class="smooz">Обо мне</a></li>
+                        <li class="header__item"><a href="#portfolio" class="smooz">Портфолио</a></a></li>
+                        <li class="header__item"><a href="#stage" class="smooz">Этапы работ</a></li>
+                        <li class="header__item"><a href="#cost" class="smooz">Цены</a></li>
+                        <li class="header__item"><a href="#conect" class="smooz">Обратная связь</a></li>
                     </ul>
                 </nav>
                 <div class="header__contact">

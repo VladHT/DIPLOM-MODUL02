@@ -379,7 +379,6 @@ body{
         margin-top: 43px;
         padding-right: 12px;
         gap: 32px;
-        padding-bottom: 152px;
         @media (max-width:$r_tab_846) {
             padding-bottom: 60px;
         }
@@ -426,6 +425,9 @@ body{
     height: 100.5px;
     border-top: 1px solid $black;
     border-bottom: 1px solid $black;
+    &__padding{
+        padding-top: 152px;
+    }
     &__count{
         font-weight: 400;
         font-size: 28px;
@@ -1559,7 +1561,106 @@ body{
     }
 }
 
+.menu{
+    position: absolute;
+    top: -400px;
+    left: -490px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+    padding: 80px 10px 40px;
+    width: 0px;
+    background-color: #232326;
+    color: white;
+    opacity: 0;
+    transition: 1s;
+    @media (max-width:$r_tab_846) {
+        width: 500px;
+    }
+    @media (max-width:$r_mob_540) {
+        width: 330px;
+        left: -310px;
+    }
+    .header__nav{
+        display: block;
+    }
+    .header__contact{
+        display: flex;
+        justify-content: center;
+        &::after{
+            right: 257px;
+            border-color: white;
+            display: block;
+            @media (max-width:$r_mob_540) {
+                right: 171px;
+            }
+            &:hover{
+                border-color: #D40000;
+            }
+        }
+    }
+    .about__links{
+        justify-content: center;
+        a{
+            color: white;
+            &:hover{
+                color: #D40000;
+            }
+        }
+    }
+    .header__list{
+        flex-direction: column;
+        gap: 0;
+        border-top: 1px solid #f3f2f021;
+        border-bottom: 1px solid #f3f2f021;
+    }
+    .header__item{
+        padding: 10px 0;
+        margin: 0;
+        border-top: 1px solid #f3f2f021;
+        border-bottom: 1px solid #f3f2f021;
+        a{
+            color: white;
+            &:hover{
+                color: #D40000;
+            }
+        }
+    }
+    .header__tel{
+        color: white;
+        &:hover{
+            color: #D40000;
+        }
+    }
+    .header__mail{
+        color: white;
+        display: block;
+        &:hover{
+            color: #D40000;
+        }
+    }
+    .close__btn{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-image: url(../images/close.svg);
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover{
+            background-image: url(../images/close-red.svg);
+        }
+    }
+}
 
+.show{
+    opacity: 1;
+    top: -21px;
+}
 
 // DARK-THEME
 .dark{
