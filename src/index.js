@@ -8,6 +8,7 @@ document.getElementById('btn-toggle').onclick = function() {
 
   document.getElementById('menu_show').onclick = function() {
   document.getElementById("menu").classList.toggle("show");
+  document.getElementById('html').classList.toggle('mask');
 }
 
 const links = document.querySelectorAll(".smooz");

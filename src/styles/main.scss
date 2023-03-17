@@ -1561,9 +1561,22 @@ body{
     }
 }
 
+.mask{
+    &::after{
+        content: "";
+        width: 100%;
+        height: 1145%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(0,0,0,.5);
+        z-index: 5;
+    }
+}
+
 .menu{
     position: absolute;
-    top: -400px;
+    top: -500px;
     left: -490px;
     z-index: 99;
     display: flex;
@@ -1572,10 +1585,11 @@ body{
     gap: 35px;
     padding: 80px 10px 40px;
     width: 0px;
-    background-color: #232326;
-    color: white;
+    background-color: #F3F2F0;
+    color: $black;
     opacity: 0;
     transition: 1s;
+    z-index: 2;
     @media (max-width:$r_tab_846) {
         width: 500px;
     }
@@ -1591,7 +1605,7 @@ body{
         justify-content: center;
         &::after{
             right: 257px;
-            border-color: white;
+            border-color: $black;
             display: block;
             @media (max-width:$r_mob_540) {
                 right: 171px;
@@ -1604,7 +1618,7 @@ body{
     .about__links{
         justify-content: center;
         a{
-            color: white;
+            color: $black;
             &:hover{
                 color: #D40000;
             }
@@ -1613,29 +1627,29 @@ body{
     .header__list{
         flex-direction: column;
         gap: 0;
-        border-top: 1px solid #f3f2f021;
-        border-bottom: 1px solid #f3f2f021;
+        border-top: 1px solid #01010121;
+        border-bottom: 1px solid #01010121;
     }
     .header__item{
         padding: 10px 0;
         margin: 0;
-        border-top: 1px solid #f3f2f021;
-        border-bottom: 1px solid #f3f2f021;
+        border-top: 1px solid #01010121;
+        border-bottom: 1px solid #01010121;
         a{
-            color: white;
+            color: $black;
             &:hover{
                 color: #D40000;
             }
         }
     }
     .header__tel{
-        color: white;
+        color: $black;
         &:hover{
             color: #D40000;
         }
     }
     .header__mail{
-        color: white;
+        color: $black;
         display: block;
         &:hover{
             color: #D40000;
@@ -1645,7 +1659,7 @@ body{
         position: absolute;
         right: 10px;
         top: 10px;
-        background-image: url(../images/close.svg);
+        background-image: url(../images/close-black.svg);
         background-size: cover;
         width: 20px;
         height: 20px;
