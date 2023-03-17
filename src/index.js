@@ -25,3 +25,16 @@ const links = document.querySelectorAll(".smooz");
            behavior: "smooth"
        });
        }
+
+
+
+window.onscroll = function(){scrollFunction()};
+
+
+function scrollFunction(){
+  if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
+      document.getElementById('html').classList.remove ('mask');
+      document.getElementById('menu').classList.remove ('show');
+  }
+}
+

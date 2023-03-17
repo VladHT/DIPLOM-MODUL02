@@ -1678,8 +1678,45 @@ body{
 
 // DARK-THEME
 .dark{
-    color: white;
+    color: #F3F2F0;
     background: #232326;
+    .menu{
+        background-color: #232326;
+        color: white;
+        .header__contact{
+            &::after{
+                border-color: white;
+            }
+        }
+        .about__links{
+            a{
+                color: white;
+            }
+        }
+        .header__list{
+            border-top: 1px solid #f3f2f020;
+            border-bottom: 1px solid #F3F2F020;
+        }
+        .header__item{
+            border-top: 1px solid #F3F2F020;
+            border-bottom: 1px solid #F3F2F020;
+            a{
+                color: white;
+            }
+        }
+        .header__tel{
+            color: white;
+        }
+        .header__mail{
+            color: white;
+        }
+        .close__btn{
+            background-image: url(../images/close.svg);
+            &:hover{
+                background-image: url(../images/close-red.svg);
+            }
+        }
+    }
     .btn-toggle{
         background-image: url(../images/sun.svg);
         background-size: cover;
