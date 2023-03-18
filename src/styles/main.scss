@@ -254,6 +254,9 @@ body{
             transition: 0.3s;
             border-radius: 4rem;
             background-color: $black;
+            @media (max-width:$r_tab_846) {
+                width: 135px;
+            }
         }
         &:hover{
             &::before{
