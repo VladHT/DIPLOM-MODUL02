@@ -554,6 +554,10 @@ body{
                 width: 340px;
                 height: 190px;
             }
+            @media (max-width:$r_mob_400) {
+                width: 320px;
+                height: 190px;
+            }
             &:hover{
                 opacity: 0.6;
                 &::after{
@@ -1597,7 +1601,7 @@ body{
     }
     @media (max-width:$r_mob_540) {
         width: 330px;
-        left: -310px;
+        left: -314px;
     }
     .header__nav{
         display: block;
