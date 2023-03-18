@@ -36,5 +36,20 @@ function scrollFunction(){
       document.getElementById('html').classList.remove ('mask');
       document.getElementById('menu').classList.remove ('show');
   }
+};
+
+window.onclick = function(){hideFunction()};
+
+function hideFunction(){
+  if(document.getElementById('menu').classList.contains ('show')){
+    window.addEventListener('click',function(e){
+      document.getElementById('menu').classList.toggle ('show');
+      document.getElementById('html').classList.toggle ('mask');
+    })
+  }
 }
 
+document.getElementById('close').onclick = function() {
+  document.getElementById('menu').classList.remove ('show');
+  document.getElementById('html').classList.remove ('mask');
+}
