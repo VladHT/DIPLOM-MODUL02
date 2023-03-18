@@ -1134,6 +1134,8 @@ body{
         font-weight: 400;
         font-size: 28px;
         line-height: 150%;
+        z-index: 1;
+        position: relative;
         opacity: 0.8;
         margin-top: 23px;
         @media (max-width:$r_tab_846) {
